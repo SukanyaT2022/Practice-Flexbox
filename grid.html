@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+    <style>
+
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            overflow-x: hidden;
+        }
+
+.mainBox{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)) ;
+    /*this auto fit responsive each box is 300px 
+    if I decide to add more box so reduce pixel from 300ox to 200 ir leaa*/
+/* grid-template- colume:1 r 1fr 1fr 1fr --not responsive
+another way:  use repeat(4, 1fr) means 4 box each box 1 fr  -- not responsive
+
+*/
+grid-gap: 10px;
+}
+
+.smallBox{
+   /* in grid we do not need to define width for small box*/
+   height: 400px;
+   border: 2px solid green;
+   border-radius: 10px;
+text-align: center;
+
+}
+
+.smallBox img{
+    width: 150px;
+height: 150px;
+border-radius: 100%;
+object-fit: cover;
+margin-top: 20px;
+
+}
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="mainBox">
+        <!--box1-->
+        <div class="smallBox">
+            <img src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZW1wbG95ZWUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+<h2>Tom  Hank</h2>
+<p>Marketing Manager</p>
+
+<div class="social">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+
+</div>
+        </div>
+
+          <!--box2-->
+          <div class="smallBox">
+            <img src="https://images.unsplash.com/photo-1558222218-b7b54eede3f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZW1wbG95ZWUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+<h2>Tom  Hank</h2>
+<p>Marketing Manager</p>
+
+<div class="social">
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-tiktok"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-instagram"></i>
+
+</div>
+        </div>
+
+ <!--box3-->
+ <div class="smallBox">
+    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZW1wbG95ZWUlMjBwaWN0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60">
+<h2>Tom  Hank</h2>
+<p>Marketing Manager</p>
+
+<div class="social">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-tiktok"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+
+</div>
+</div>
+
+<!--box4-->
+<div class="smallBox">
+    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGVtcGxveWVlJTIwcGljdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60">
+<h2>Tom  Hank</h2>
+<p>Marketing Manager</p>
+
+<div class="social">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-tiktok"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+
+</div>
+</div>
+
+<!--box5-->
+<div class="smallBox">
+    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGVtcGxveWVlJTIwcGljdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60">
+<h2>Tom  Hank</h2>
+<p>Marketing Manager</p>
+
+<div class="social">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-tiktok"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+
+</div>
+</div>
+
+<!--box6-->
+<div class="smallBox">
+    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGVtcGxveWVlJTIwcGljdHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60">
+<h2>Tom  Hank</h2>
+<p>Marketing Manager</p>
+
+<div class="social">
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-tiktok"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-instagram"></i>
+
+</div>
+</div>
+
+    </div>
+
+    
+</body>
+<script src="https://kit.fontawesome.com/42d8882816.js" crossorigin="anonymous"></script>
+
+
+</html>
